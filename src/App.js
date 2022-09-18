@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const isLoggedInLocalStorageValue = localStorage.getItem('isLoggedIn');
-    if (isLoggedInLocalStorageValue)
+    if (isLoggedInLocalStorageValue === '1')
       setIsLoggedIn(true);
   },[]);
 
